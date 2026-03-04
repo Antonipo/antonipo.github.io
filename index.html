@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineer & Cloud Architect. Especializado en backend con Python, arquitectura serverless en AWS y automatización de procesos que reducen tiempos operativos hasta en un 85%.">
+    <meta name="keywords" content="Software Engineer, Cloud Architect, AWS, serverless, Python, backend, Lima, Perú, Antonipo">
+    <meta name="author" content="Antonio Rodriguez">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://antoniorodriguez.dev/">
+    <meta property="og:title" content="Antonio Rodriguez | Software Engineer & Cloud Architect">
+    <meta property="og:description" content="Especializado en backend con Python, arquitectura serverless en AWS y automatización de procesos.">
+    <meta property="og:image" content="https://antoniorodriguez.dev/favicon.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://antoniorodriguez.dev/">
+    <meta property="twitter:title" content="Antonio Rodriguez | Software Engineer & Cloud Architect">
+    <meta property="twitter:description" content="Especializado en backend con Python, arquitectura serverless en AWS y automatización de procesos.">
+    <meta property="twitter:image" content="https://antoniorodriguez.dev/favicon.svg">
+    
+    <title>Antonio Rodriguez | Software Engineer & Cloud Architect</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Terminal/Data aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-layout">
+        
+        <!-- TOP: Main Header & Ticker -->
+        <header class="top-header">
+            <div class="logo-area">
+                <span class="logo-icon">▲</span>
+                <span class="logo-text">AR<span class="logo-sub">_terminal</span></span>
+            </div>
+            <div class="nav-controls">
+                <div class="status-indicator">● LIVE</div>
+                <div class="nav-links" id="nav-container">
+                    <!-- Links injected via JS, e.g., | EXPERIENCE | SKILLS | -->
+                </div>
+                <div class="toggles">
+                    <button id="lang-toggle" class="system-btn">ES/EN</button>
+                    <button id="theme-toggle" class="system-btn">☀/☾</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- TICKER BAR (simulate market prices) -->
+        <div class="ticker-bar">
+            <div class="ticker-content" id="ticker-container">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            
+            <!-- LEFT PANEL: Hero / Contact Info / Experience -->
+            <aside class="sidebar-left">
+                <section class="panel hero-panel">
+                    <div class="panel-header">ABOUT_ME.TXT</div>
+                    <div class="panel-content scrollable" id="hero-section">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
+                
+                <section class="panel contact-panel">
+                    <div class="panel-header">SYS_CONTACT</div>
+                    <div class="panel-content" id="contact-container">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
+            </aside>
+
+            <!-- CENTER PANEL: Primary View (Projects / Graph) -->
+            <section class="center-panel">
+                <div class="tabs-header">
+                    <div class="tab-title">MAIN_VIEW</div>
+                    <div class="tabs-group">
+                        <button class="tab-btn active" data-target="projects-view" id="tab-projects">APPLICATONS</button>
+                        <button class="tab-btn" data-target="packages-view" id="tab-packages">PACKAGES</button>
+                    </div>
+                </div>
+                <div class="panel-content chart-area">
+                    
+                    <!-- PROJECTS VIEW -->
+                    <div id="projects-view" class="view-content active-view">
+                        <div class="view-desc" id="desc-projects">Arquitecturas cloud, full-stack y APIs robustas.</div>
+                        <div class="list-grid" id="projects-container">
+                            <!-- Injected via JS -->
+                        </div>
+                    </div>
+
+                    <!-- PACKAGES VIEW -->
+                    <div id="packages-view" class="view-content hidden-view">
+                        <div class="view-desc" id="desc-packages">Herramientas open-source publicadas para la comunidad.</div>
+                        <div class="list-grid" id="packages-container">
+                            <!-- Injected via JS -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- RIGHT PANEL: Skills / Contestants (Experience timeline) -->
+            <aside class="sidebar-right">
+                <section class="panel skills-panel">
+                    <div class="panel-header" id="title-skills">COMPETENCIES</div>
+                    <div class="panel-content scrollable" id="skills-container">
+                        <!-- Injected via JS -->
+                    </div>
+                </section>
+                
+                <section class="panel experience-panel">
+                    <div class="panel-header" id="title-experience">EXPERIENCE</div>
+                    <div class="panel-content scrollable">
+                        <div class="timeline-list" id="experience-container">
+                             <!-- Injected via JS -->
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+        </main>
+    </div>
+
+    <!-- Modals (Hidden by default) -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div id="modals-container">
+        <!-- Injected via JS -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

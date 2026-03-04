@@ -1,0 +1,96 @@
+{
+    "hero": {
+      "name": "ANTONIO RODRIGUEZ",
+      "subtitle": "Software Engineer & Cloud Architect",
+      "description": "Specialized in Python backend, AWS serverless architecture, and process automation reducing operational times by up to 85%."
+    },
+    "contact": {
+      "location": "Lima, Peru",
+      "email": "contact@antoniorodriguez.dev",
+      "linkedin": "https://www.linkedin.com/in/antonio-rodriguez-vega/",
+      "github": "https://github.com/Antonipo"
+    },
+    "experience": [
+      {
+        "role": "Software Engineer",
+        "company": "TOC Biometrics Peru",
+        "period": "May 2024 – Present",
+        "highlights": [
+          "Monitoring system from scratch (70% reduction in detection time).",
+          "Real-time telemetry (AWS Lambda, API Gateway, DynamoDB, Go). Full traceability of processes in real-time.",
+          "25 concurrent requests per Lambda with auto-scaling."
+        ]
+      },
+      {
+        "role": "Software Developer",
+        "company": "Ganemo Corporation",
+        "period": "Sep 2021 – Apr 2024",
+        "highlights": [
+          "Odoo CRM migrations (v14 to v16) with zero downtime.",
+          "Cloud architecture on AWS (ECS, EKS, S3, EFS).",
+          "Accounting module with SUNAT integration."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "category": "Backend",
+        "items": "Python, JavaScript, Go, Flask, Express, Node.js"
+      },
+      {
+        "category": "Cloud & DevOps",
+        "items": "AWS Lambda, AWS ECS, AWS EKS, AWS S3, AWS API Gateway, AWS EC2, AWS RDS, Docker, Kubernetes, CI/CD, GitHub Actions"
+      },
+      {
+        "category": "Databases",
+        "items": "PostgreSQL, MongoDB, DynamoDB"
+      },
+      {
+        "category": "Tools",
+        "items": "Git, SAM, Bash, Vim, Claude Code"
+      }
+    ],
+    "projects": [
+      {
+        "id": "app-derlinks",
+        "title": "DerLinks",
+        "short_desc": "Link Management Platform (Full-stack CRUD).",
+        "tags": ["Node.js", "PostgreSQL", "React", "Vite"],
+        "what_it_does": "Full-stack CRUD application for link management with a complete authentication system.",
+        "how_it_works": "Implements secure password hashing, advanced session management with cookies, and strict CORS configuration. The frontend uses React and Vite for a fast interactive UI, communicating with the backend via Axios.",
+        "infrastructure": "Distributed deployment using Vercel for frontend and Railway for backend, both with SSL certificates secured.",
+        "link": "https://derlinks.entrecodigosydatos.com/"
+      }
+    ],
+    "packages": [
+      {
+        "id": "package1",
+        "title": "dkmio",
+        "tags": ["Python"],
+        "short_desc": "Efficient OKM (Object-Key Mapping) for AWS DynamoDB in Python.",
+        "what_it_does": "Allows defining DynamoDB tables with minimal keys and indexes, offering a fluent API that handles expression building, attribute escaping, pagination, and error mapping automatically. Supports queries, scans, batch operations, ACID transactions, conditional writes, and TTL.",
+        "how_it_works": "Uses classes like DynamoDB, PK, SK, Index, LSI, TTL to define models. The fluent API allows chaining methods like .query().where().filter().select(). Operations auto-execute when iterating, accessing by index, or using len/bool. Includes intelligent index projection validation and retries with exponential backoff.",
+        "install_cmd": "pip install dkmio",
+        "link": "https://pypi.org/project/dkmio/",
+        "repository": "https://github.com/Antonipo/dkmio"
+      }
+    ],
+    "ui": {
+      "nav_experience": "Experience",
+      "nav_skills": "Skills",
+      "nav_projects": "Applications",
+      "nav_packages": "Packages",
+      "nav_contact": "Contact",
+      "title_experience": "Experience",
+      "title_skills": "Skills",
+      "title_projects": "Applications",
+      "desc_projects": "Cloud architectures, full-stack builds, and robust APIs.",
+      "title_packages": "Packages",
+      "desc_packages": "Open-source tools published for the community.",
+      "title_contact": "Contact",
+      "btn_projects": "View Applications",
+      "btn_packages": "View Packages",
+      "btn_sys_details": "System Details",
+      "btn_view_docs": "View Documentation"
+    }
+  }

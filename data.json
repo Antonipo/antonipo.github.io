@@ -1,0 +1,96 @@
+{
+    "hero": {
+      "name": "ANTONIO RODRIGUEZ",
+      "subtitle": "Software Engineer & Cloud Architect",
+      "description": "Especializado en backend con Python, arquitectura serverless en AWS y automatización de procesos que reducen tiempos operativos hasta en un 85%."
+    },
+    "contact": {
+      "location": "Lima, Perú",
+      "email": "contacto@antoniorodriguez.dev",
+      "linkedin": "https://www.linkedin.com/in/antonio-rodriguez-vega/",
+      "github": "https://github.com/Antonipo"
+    },
+    "experience": [
+      {
+        "role": "Ingeniero de Software",
+        "company": "TOC Biometrics Perú",
+        "period": "May 2024 – Presente",
+        "highlights": [
+          "Sistema de monitorización desde cero (reducción 70% tiempo detección).",
+          "Telemetría en tiempo real (AWS Lambda, API Gateway, DynamoDB, Go). Trazabilidad completa de procesos en tiempo real.",
+          "25 peticiones concurrentes por Lambda con auto-escalado."
+        ]
+      },
+      {
+        "role": "Desarrollador de Software",
+        "company": "Ganemo Corporation",
+        "period": "Sep 2021 – Abr 2024",
+        "highlights": [
+          "Migraciones de Odoo CRM (v14 a v16) sin tiempo de inactividad.",
+          "Arquitectura cloud en AWS (ECS, EKS, S3, EFS).",
+          "Módulo contable con integración SUNAT."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "category": "Backend",
+        "items": "Python, JavaScript, Go, Flask, Express, Node.js"
+      },
+      {
+        "category": "Cloud & DevOps",
+        "items": "AWS Lambda, AWS ECS, AWS EKS, AWS S3, AWS API Gateway, AWS EC2, AWS RDS, Docker, Kubernetes, CI/CD, GitHub Actions"
+      },
+      {
+        "category": "Bases de Datos",
+        "items": "PostgreSQL, MongoDB, DynamoDB"
+      },
+      {
+        "Category": "Herramientas",
+        "items": "Git, SAM, Bash, Vim, Claude Code"
+      }
+    ],
+    "projects": [
+      {
+        "id": "app-derlinks",
+        "title": "DerLinks",
+        "short_desc": "Plataforma de Gestión de Enlaces (Full-stack CRUD).",
+        "tags": ["Node.js", "PostgreSQL", "React", "Vite"],
+        "what_it_does": "Aplicación full-stack CRUD para gestión de enlaces con sistema completo de autenticación.",
+        "how_it_works": "Implementa cifrado seguro de contraseñas, gestión avanzada de sesiones con cookies y estricta configuración CORS. En el frontend, utiliza React y Vite para una UI rápida e interactiva, comunicándose con el backend mediante Axios.",
+        "infrastructure": "Despliegue distribuido usando Vercel para el frontend y Railway para el backend, ambos con certificados SSL asegurados.",
+        "link": "https://derlinks.entrecodigosydatos.com/"
+      }
+    ],
+    "packages": [
+      {
+        "id": "package1",
+        "title": "dkmio",
+        "tags": ["Python"],
+        "short_desc": "Efficient OKM (Object-Key Mapping) for AWS DynamoDB in Python.",
+        "what_it_does": "Permite definir tablas de DynamoDB con claves e índices mínimos, ofreciendo una API fluida que maneja construcción de expresiones, escape de atributos, paginación y mapeo de errores automáticamente. Soporta queries, scans, operaciones batch, transacciones ACID, writes condicionales y TTL.",
+        "how_it_works": "Usa clases como DynamoDB, PK, SK, Index, LSI, TTL para definir modelos. La API fluida permite encadenar métodos como .query().where().filter().select(). Los operaciones auto-ejecutan al iterar, acceder por índice, o usar len/bool. Incluye validación inteligente de proyecciones de índices y reintentos con backoff exponencial.",
+        "install_cmd": "pip install dkmio",
+        "link": "https://pypi.org/project/dkmio/",
+        "repository": "https://github.com/Antonipo/dkmio"
+      }
+    ],
+    "ui": {
+      "nav_experience": "Experiencia",
+      "nav_skills": "Competencias",
+      "nav_projects": "Aplicaciones",
+      "nav_packages": "Paquetes",
+      "nav_contact": "Contacto",
+      "title_experience": "Experiencia",
+      "title_skills": "Competencias",
+      "title_projects": "Aplicaciones",
+      "desc_projects": "Arquitecturas cloud, full-stack y APIs robustas.",
+      "title_packages": "Paquetes",
+      "desc_packages": "Herramientas open-source publicadas para la comunidad.",
+      "title_contact": "Contacto",
+      "btn_projects": "Ver Aplicaciones",
+      "btn_packages": "Ver Paquetes",
+      "btn_sys_details": "Detalles del Sistema",
+      "btn_view_docs": "Ver Documentación"
+    }
+}
