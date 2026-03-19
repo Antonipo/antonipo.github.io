@@ -55,11 +55,11 @@
         "id": "app-derlinks",
         "title": "DerLinks",
         "short_desc": "Link Management Platform (Full-stack CRUD).",
-        "tags": ["Node.js", "PostgreSQL", "React", "Vite"],
+        "tags": ["Node.js", "DynamoDB", "React", "Vite"],
         "what_it_does": "Full-stack CRUD application for link management with a complete authentication system.",
         "how_it_works": "Implements secure password hashing, advanced session management with cookies, and strict CORS configuration. The frontend uses React and Vite for a fast interactive UI, communicating with the backend via Axios.",
         "infrastructure": "Distributed deployment using Vercel for frontend and Railway for backend, both with SSL certificates secured.",
-        "link": "https://derlinks.entrecodigosydatos.com/"
+        "link": "https://derlinks.antoniorodriguez.dev/"
       }
     ],
     "packages": [
@@ -73,6 +73,21 @@
         "install_cmd": "pip install dkmio",
         "link": "https://pypi.org/project/dkmio/",
         "repository": "https://github.com/Antonipo/dkmio"
+      },
+      {
+        "id":"package_deployless",
+        "title":"deployless",
+        "tags":[
+            "Python",
+            "AWS",
+            "Serverless"
+        ],
+        "short_desc":"Compile Flask apps to AWS SAM serverless templates with zero rewriting.",
+        "what_it_does":"Compiles Flask applications into AWS SAM serverless templates ready to deploy. Generates one Lambda per feature, CloudFormation resources (DynamoDB, S3, SQS, KMS), CloudWatch alarms, log groups, and a template.yaml — without modifying your existing code.",
+        "how_it_works":"Uses pc.configure(), @pc.route(), @pc.cron(), and @pc.lambda_function() decorators to capture Lambda configuration at compile time — no-ops at runtime. Discovers features by scanning app/features/*/routes.py, validates resources and config (E00–E29 error codes), packages each Lambda into .dist/, and writes a SAM template with correct IAM, env vars, tags, and CORS.",
+        "install_cmd":"pip install deployless",
+        "link":"https://pypi.org/project/deployless/",
+        "repository":"https://github.com/Antonipo/deployless"
       }
     ],
     "ui": {

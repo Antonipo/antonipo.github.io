@@ -311,6 +311,7 @@ function renderModals(projects, packages) {
                 <p><strong>> ${currentLang === 'es' ? 'OBJETIVO' : 'OBJECTIVE'}:</strong><br>${proj.what_it_does}</p>
                 <p><strong>> ${currentLang === 'es' ? 'OPERACIÓN' : 'OPERATION'}:</strong><br>${proj.how_it_works}</p>
                 ${proj.infrastructure ? `<p><strong>> ${currentLang === 'es' ? 'INFRAESTRUCTURA' : 'INFRASTRUCTURE'}:</strong><br>${proj.infrastructure}</p>` : ''}
+                ${proj.link ? `<br><div><a href="${proj.link}" class="card-action" target="_blank" style="text-decoration:none; display:inline-block;">>> ${currentLang === 'es' ? 'VER PROYECTO' : 'VIEW PROJECT'}</a></div>` : ''}
             </div>
         </div>
     `;

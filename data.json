@@ -55,11 +55,11 @@
         "id": "app-derlinks",
         "title": "DerLinks",
         "short_desc": "Plataforma de Gestión de Enlaces (Full-stack CRUD).",
-        "tags": ["Node.js", "PostgreSQL", "React", "Vite"],
+        "tags": ["Node.js", "DynamoDB", "React", "Vite"],
         "what_it_does": "Aplicación full-stack CRUD para gestión de enlaces con sistema completo de autenticación.",
         "how_it_works": "Implementa cifrado seguro de contraseñas, gestión avanzada de sesiones con cookies y estricta configuración CORS. En el frontend, utiliza React y Vite para una UI rápida e interactiva, comunicándose con el backend mediante Axios.",
         "infrastructure": "Despliegue distribuido usando Vercel para el frontend y Railway para el backend, ambos con certificados SSL asegurados.",
-        "link": "https://derlinks.entrecodigosydatos.com/"
+        "link": "https://derlinks.antoniorodriguez.dev"
       }
     ],
     "packages": [
@@ -73,6 +73,21 @@
         "install_cmd": "pip install dkmio",
         "link": "https://pypi.org/project/dkmio/",
         "repository": "https://github.com/Antonipo/dkmio"
+      },
+      {
+        "id": "package_deployless",
+        "title": "deployless",
+        "tags": [
+          "Python",
+          "AWS",
+          "Serverless"
+        ],
+        "short_desc": "Compila aplicaciones Flask en plantillas serverless de AWS SAM sin necesidad de reescritura.",
+        "what_it_does": "Compila aplicaciones Flask en plantillas serverless de AWS SAM listas para desplegar. Genera una Lambda por funcionalidad, recursos de CloudFormation (DynamoDB, S3, SQS, KMS), alarmas de CloudWatch, grupos de logs y un archivo template.yaml, sin modificar tu código existente.",
+        "how_it_works": "Utiliza los decoradores pc.configure(), @pc.route(), @pc.cron() y @pc.lambda_function() para capturar la configuración de Lambda en tiempo de compilación (sin efecto en tiempo de ejecución). Descubre funcionalidades escaneando app/features/*/routes.py, valida recursos y configuración (códigos de error E00–E29), empaqueta cada Lambda en .dist/ y genera una plantilla SAM con IAM, variables de entorno, etiquetas y CORS correctamente configurados.",
+        "install_cmd": "pip install deployless",
+        "link": "https://pypi.org/project/deployless/",
+        "repository": "https://github.com/Antonipo/deployless"
       }
     ],
     "ui": {
